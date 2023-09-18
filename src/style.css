@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-color: rgb(250, 211, 160);
+}
+
+.contactApp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 100%;
+  max-width: 680px;
+  max-height: 520px;
+  height: 100%;
+  gap: 2rem;
+  padding: 18px;
+  border-radius: 15px;
+  margin: 6px;
+
+  background-color: antiquewhite;
+}
+
+.contactApp h1 {
+  width: 100%;
+  text-align: start;
+  color: rgb(97, 50, 0);
+}
+
+.ContactItem_img {
+  width: 50px;
+  border-radius: 50%;
+  transition-duration: 300ms;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 90px;
+  margin: auto;
+}
+
+.contactItem_body:hover {
+    background-color: rgb(165, 94, 8);
+    color: rgb(241, 195, 144);
+    cursor: default;
+}
+
+.ContactItem_img:hover {
+  scale: 95%;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: end;
+  overflow-x: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.contactItem_body {
+  height: 65%;
+  width: 100%;
+  margin-left: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+
+  border-left: 2px inset rgba(192, 191, 191, 0.171);
+  border-radius: 6px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition-duration: 600ms;
+  background-color: rgb(252, 217, 174);
+  color: rgb(100, 62, 21);
+}
+
+.btnClose {
+  text-align: center;
+  background-color: rgb(250, 183, 117);
+  padding: 6px 8px 6px 8px;
+  border-radius: 4px;
+  transition-duration: 650ms;
+  color: black;
+}
+
+.btnClose:hover {
+  cursor: pointer;
+  background-color: rgb(250, 211, 160);
+}
+
+.btnClose:active {
+  scale: 95%;
+}
+
+.contactApp_header {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.btnReset {
+  color: rgb(97, 50, 0);
+  transition-duration: 300ms;
+  scale: 105%;
+}
+
+.btnReset:hover {
+  cursor: pointer;
+  scale: 100%;
+}
+
+@media screen and (max-width: 560px) {
+  .contactApp {
+    max-height: 800px;
+  }
+}
