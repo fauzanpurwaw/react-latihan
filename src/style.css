@@ -63,12 +63,11 @@
 .contactList {
   display: flex;
   flex-direction: column;
-  height: 100%;
   width: 100%;
-  justify-content: end;
   overflow-x: auto;
   padding-top: 10px;
   padding-bottom: 10px;
+  overflow-y: scroll;
 }
 
 .contactItem_body {
@@ -108,10 +107,52 @@
   scale: 95%;
 }
 
+.submit {
+  width: 100%;
+  align-items: center;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  border-radius: 5px;
+  background-color: #cf7d39;
+  color: rgb(250, 211, 160);
+  font-weight: bold;
+  transition-duration: 100ms;
+  cursor: pointer;
+}
+
+.submit:active {
+  scale: 95%;
+}
+
 .contactApp_header {
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 100%;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+}
+
+.formContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  height: 26px;
+  margin-top: 6px;
+  border: none;
+  text-align: center;
+  background-color: rgb(204, 204, 186);
+  border-radius: 5px;
 }
 
 .btnReset {
