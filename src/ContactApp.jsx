@@ -1,7 +1,7 @@
 import React from "react";
 import ContactList from "./ContactList";
 import { getData } from "./data";
-import Form from "./form";
+import Form from "./FormInput";
 
 class ContactApp extends React.Component {
   constructor(props) {
